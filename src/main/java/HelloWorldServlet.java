@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 
 
-@WebServlet (name = "HelloWorldServlet", urlPatterns = "")
+@WebServlet (name = "HelloWorldServlet", urlPatterns = "/hello")
 public class HelloWorldServlet extends HttpServlet {
 
     private int counter = 0;

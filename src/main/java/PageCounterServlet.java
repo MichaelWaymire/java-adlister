@@ -15,7 +15,12 @@ public class PageCounterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,HttpServletResponse response)
         throws ServletException, IOException {
 
-        PrintWriter out = response.getWriter();
+        boolean reset = Boolean.valueOf(request.getParameter("reset"));
+
+        if(reset){
+            counter = 0;
+        }
+
         counter++;
         response.getWriter().println("<h1>This page has a counter</h1>");
         response.getWriter().println(counter);
