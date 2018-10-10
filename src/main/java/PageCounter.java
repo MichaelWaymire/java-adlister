@@ -1,0 +1,2 @@
+public class PageCounter {
+}
