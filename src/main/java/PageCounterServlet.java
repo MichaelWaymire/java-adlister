@@ -28,7 +28,10 @@ public class PageCounterServlet extends HttpServlet {
     }
 
 
+
+
     //Everything the site refreshes or visited the counter will count up by 1.
 
 
 }
+
