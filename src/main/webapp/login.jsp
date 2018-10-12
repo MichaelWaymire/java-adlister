@@ -5,12 +5,19 @@
   Time: 1:40 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
 
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
+<%
+//log in checker
 if (request.getMethod().equalsIgnoreCase("post")) {
+    //takes in the parameter for username
     String username = request.getParameter("username");
+    //takes in the parameter for password
     String password = request.getParameter("password");
+    //checks to see if the username is admin and password is password
     if(username.equals("admin") && (password.equals("password")) ){
         response.sendRedirect("profile.jsp");
 
