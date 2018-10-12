@@ -27,23 +27,25 @@ if (request.getMethod().equalsIgnoreCase("post")) {
 %>
 <html>
 <head>
-    <title>Title</title>
+
+
+
 </head>
 <body>
-    <h3>Login:</h3>
-    <form action="login.jsp" method="post">
-        <div>
-            <label for="username">Username:</label>
-            <input id="username" name="username" type="text">
+<jsp:include page="partials/navbar.jsp" />
+<div class="container">
+    <h1>Please Log In</h1>
+    <form action="/login.jsp" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" class="form-control" type="text">
         </div>
-
-        <div>
-            <label for="password">Password:</label>
-            <input id="password" name="password" type="text">
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" class="form-control" type="password">
         </div>
-        <input type="submit" value="Log In">
-
-</form>
-
+        <input type="submit" class="btn btn-primary btn-block" value="Log In">
+    </form>
+</div>
 </body>
 </html>
