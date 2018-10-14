@@ -3,10 +3,14 @@
 <html>
 <head>
 
-
+<jsp:include page="partials/head.jsp">
+<jsp:param name="title" value="Adlister"/>
+</jsp:include>
 
 </head>
+
 <body>
+
 <jsp:include page="partials/navbar.jsp" />
 <div class="container">
     <h1>Welcome to the Adlister!</h1>
