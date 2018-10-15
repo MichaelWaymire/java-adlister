@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -8,7 +9,7 @@
     <jsp:include page="../partials/navbar.jsp" />
 
     <div class="container">
-        <h1>Admin Profile</h1>
+        <h1>Welcome, ${sessionScope.username}. Tou your Profile</h1>
     </div>
 
 </body>
