@@ -5,7 +5,7 @@
 
 </head>
 <body>
-    <jsp:include page="../WEB-INF/partials/navbar.jsp" />
+    <jsp:include page="../partials/navbar.jsp" />
 
     <div class="container">
         <h1>Admin Profile</h1>
