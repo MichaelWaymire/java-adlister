@@ -1,7 +1,4 @@
 
-package com.codeup.adlister.dao;
-
-import javax.servlet.jsp.jstl.core.Config;
 
 public class DaoFactory {
     private static com.codeup.adlister.dao.Ads adsDao;
